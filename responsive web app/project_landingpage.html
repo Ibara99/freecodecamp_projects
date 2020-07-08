@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Landing Page</title>
+	<style>
+		
+@keyframes fokus{
+	100% {
+		transform: scale(1.1);
+	}
+}
+@keyframes fokus-bg{
+	100% {
+		background-color: silver;
+		color: black;
+	}
+}
+
+
+	    header {
+			top: 0;
+			left: 0;
+			width: 100%;			
+			position: fixed;
+			background-color: gold;
+			display:flex;
+			justify-content: space-between;
+		}
+		#header-img {
+			padding: 5px;
+			margin-left: 10px;
+			margin-right: 0px;
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+		}
+	#header h1 {
+		width: 60%;
+		align-self:  flex-start;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+		.nav-link {
+			margin-right: 10px;
+			width: 60px;
+			height: 40px;
+			font-size: 1.2em;
+			text-decoration: none;
+			text-align: center;
+			color: black;
+			display: inline-block;
+			padding: 15px 10px 0px 10px;
+		}
+		.nav-link:hover{
+			//color: white;
+			//background-color: blue;
+			animation-name: fokus-bg;
+			animation-duration: 0.5s;
+			animation-fill-mode: forwards
+		}
+		.content{
+			padding-top: 40px;
+			font-family: arial;
+		}
+		.section {
+			//min-height: 300px;
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			background: linear-gradient(45deg, white, lightgray);
+		}
+		.section h2, .section p {
+			text-align: center;
+		}
+
+		#video {
+			padding-left: 31.8%;
+			padding-right: 31.8%;
+			width: 480px;
+			height: 320px;
+		}
+    #subcript {
+			padding-top: 100px;
+			padding-bottom: 100px;
+    }
+		#form {
+			margin: auto;
+			width: 60%;
+			display: flex;
+			justify-content: space-around;
+		}
+		#form input[type="email"]{
+				width: 70%;
+			  font-size: 1.0em;
+		}
+	  #form input[type="submit"]{
+			width: 20%;
+			font-size: 1.0em;
+			padding: 2px 20px;
+			background-color: gold;
+		}
+	  #form input[type="submit"]:hover{
+			animation-name: fokus;
+			animation-duration: 0.1s;
+			animation-fill-mode: forwards;
+		}
+		.flex-container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;	
+			justify-content: space-evenly;
+			align-items: center;
+			border-radius: 10px;
+		}
+		.flex-item {
+			margin: 10px;
+			width: 15%;
+			//background: linear-gradient(45deg, white, lightgray);
+			text-align: center;
+			padding: 20px 30px;
+		}
+		.foto-container {
+			width: 50%;
+			margin: auto;
+			
+		}
+		.foto-member{
+			width: 100%;
+			border: 1px gray solid;
+			border-radius:50%;
+		}
+		.flex-desc {
+			//border: 1px black solid;
+			width: 100%;
+			//border-radius: 5px;
+		}
+		
+	  @media (max-width: 480px) {
+			#header{
+				justify-content: flex-start;
+				flex-wrap: wrap;
+			}
+			#header h1 {
+				overflow: hidden;
+				width: 80%;
+				font-size: 1.7em;
+			}
+			#header-img {
+				margin-top: 9px;
+				margin-right: 10px;
+				width: 30px;
+				height: 30px;
+			}
+			#nav-bar {
+				width: 100%;
+			}
+			.nav-link {
+				
+				width: 100%;
+				padding: 2px;
+				height: auto;
+				font-size: 1em;
+			}
+			#form {
+				width: 90%;
+			}
+			#form input[type="email"]{
+				padding: 0;
+				width: 65%;
+			}
+			#form input[type="submit"]{
+				padding: 0;
+				width: 30%;
+				font-size: 11px;
+			}
+			#video {
+				width: 75%;
+				height: 180px;
+				padding-left: 15%;
+			}
+			
+			.flex-item {
+				width: 100%;
+				
+				text-align: center;
+				padding: 20px 30px;
+				margin: 5px;
+			}
+		}	
+	
+	</style>
+</head>
+<body>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="main">
+	
+	<header id="header">
+		<div id="logo">
+			<img id="header-img" src="https://scontent.fsub4-1.fna.fbcdn.net/v/t1.0-9/p960x960/50826240_2053855034904731_3763466252761169920_o.jpg?_nc_cat=108&_nc_sid=85a577&_nc_oc=AQnf4IB-q8RBEFwN29quycOKj-96hy3EP7f-4pKfQz-tNHUC6prx_FiWQKyCUOnoZRM&_nc_ht=scontent.fsub4-1.fna&_nc_tp=6&oh=2e0676db1ecf0739d18ccd8007bdec02&oe=5F1A57D7" alt="logo">
+		</div>
+		<h1>HOUSE MATE ID</h1>
+		<nav id="nav-bar">
+			<a class="nav-link" href="#form">satu</a>
+			<a class="nav-link" href="#video">satu</a>
+			<a class="nav-link" href="#promo">satu</a>
+		</nav>
+	</header>
+	<div class="content">		
+		<section class="section" id="subcript">
+			<h2>Play Goose's Fandom is Now Here!</h2>
+			<p>Be a member of House Mate and get the latest news of Play Goose</p>
+			<form id="form" action="https://www.freecodecamp.com/email-submit">
+				
+					<input name="email" id="email" type="email" placeholder="Email Address" required>
+				
+					<input id='submit' type="submit">
+				
+			</form>
+		</section>
+		<section class="section">
+			<h2>It's more than just a music!</h2>
+			<p>Let's hear how beautiful their songs</p>
+
+			<!--div id="video-container"-->
+				<iframe id="video" src="https://www.youtube.com/embed/pMAan8vdHjs">Video doesn't load</iframe>
+			<!--/div-->
+		</section>
+		<section class="section">
+			<h2>Play Goose Members</h2>
+			<div id="promo" class="flex-container">
+				<div class="flex-item">
+					<div class="foto-container">
+						<img class="foto-member" src="https://2.bp.blogspot.com/-uLXcq5-H9Fw/V3CviodYp7I/AAAAAAAAAV8/kmZxV7Kt-agXu7s5_2PCgYsmwP8Mpj-kwCLcB/s320/Screenshot_2016-03-20-15-34-51-1%255B1%255D.png" alt="member">
+					</div>
+					
+					<div class="flex-desc">
+						<h3>Kudo Shuhei</h3>
+						<p>Guitar</p>
+					</div>
+				</div>
+				<div class="flex-item">
+					<div class="foto-container">
+						<img class="foto-member" src="https://2.bp.blogspot.com/-s_0MpVbg1aM/V3CyElqGBEI/AAAAAAAAAWU/XjtXAGOdVDAoubsItHTWDd10bK9oratzACLcB/s320/Screenshot_2016-03-08-19-31-16-1-2.png" alt="member">
+					</div>
+					
+					<div class="flex-desc">
+						<h3>Manami</h3>
+						<p>Lead Vocal</p>
+					</div>
+				</div>
+				<div class="flex-item">
+					<div class="foto-container">
+						<img class="foto-member" src="https://4.bp.blogspot.com/-_H_dTHVmFyM/V3Cyr-zd5PI/AAAAAAAAAWg/Y9bytlNmys4p1q8g2xxHULUYfbGyKQD2wCLcB/s280/Screenshot_2016-03-20-15-35-27-1%255B1%255D.png" alt="member">
+					</div>
+					
+					<div class="flex-desc">
+						<h3>Watanabe Shuhei</h3>
+						<p>Bass</p>
+					</div>
+				</div>
+				<div class="flex-item">
+					<div class="foto-container">
+						<img class="foto-member" src="https://anggada007.files.wordpress.com/2017/01/1483857458840.jpg" alt="member">
+					</div>
+					
+					<div class="flex-desc">
+						<h3>Sayaka Sekiguchi</h3>
+						<p>Piano</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div> <!--ini punya konten-->
+	<!--User Story #14: My product 
+	landing page should have at least 
+	one media query.-->
+
+	<!--User Story #15: My product 
+	landing page should utilize CSS 
+	flexbox at least once.-->
+
+	<!--You can build your project by 
+	forking this CodePen pen. Or you 
+	can use this CDN link to run the 
+	tests in any environment you like: 
+	https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js-->
+	
+
+</div>
+</body>
+</html>
+    
