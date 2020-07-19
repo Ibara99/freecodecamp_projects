@@ -3,25 +3,95 @@
 <head>
 	<title>Technical Documentasi</title>
 	<style type="text/css">
+		
 		nav, main {
 			border: 1px black solid;
 		}
 		
 		#navbar {
-			width: 25%;
+			width: 350px;
 			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			//overflow-y: scroll;
+			background: lightgrey;
+		}
+
+		h1 {
+			font-size: 36px;
+			text-align: center;
+		}
+		
+		#link-wrapper {
+			height: 75%;
+			overflow-y: auto;
+  			overflow-x: hidden;
+		}
+
+		.nav-link {
+			padding: 10px 10px;
+			display: block;
+			padding: 10px;
+			border-top: 1px gray solid;
+			background-color: white;
+			text-decoration: none;
+			color: black;
+
+		}
+
+		.nav-link:hover {
+			background: silver;
+		}
+
+		#navbar footer {
+			height: 10%;
+			padding-top: 10px;
+			text-align: center;
 		}
 
 		#main-doc {
-			margin-left: 26%;
-			width: 70%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			display: block;
+			margin-left: 350px;
+			padding: 13px 20px;
 		}
+
+		h2 {
+			font-size: 28px;
+		}
+		#main-doc p {
+			padding-left: 20px;
+		}
+		
+		.code-wrapper {
+			margin: 5px;
+			//border: 1px black solid;
+			margin-left: 38px;
+			margin-right: 38px;
+			padding: 10px 25px;
+			background-color: lightgray;
+			border-radius: 8px;
+		}
+		
 		@media(max-width: 500px){
 			#navbar {
-				overflow: hidden;
-				opacity: 0;
+				position: absolute;
+				
+				max-height: 250px;
+				width: 100%;
+				//overflow: hidden;
+				//opacity: 0;
 			}
-		}
+			#main-doc{
+				width: 100%;;
+				margin-left: 0px;
+				margin-top: 270px;
+			}
+		}	
 	</style>
 </head>
 <body>
@@ -34,24 +104,19 @@
 	User Story #8: I can see a nav element with a corresponding id="navbar".-->
 	
 	<nav id="navbar">
-
-		<!--User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
-
-		User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.-->
-
 		<header>
-			<h1>Ini judul nav</h1>
+			<h1>Python</h1>
 		</header>
-		<!--User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
-
-		User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
-
-		User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.-->
-
 		<div id="link-wrapper">
-			<a href="#" class="nav-link"> tergantung banyaknya secsion</a>
-			<a href="#" class="nav-link"> tergantung banyaknya secsion</a>
+			<a href="#String" class="nav-link">String</a>
+			<a href="#integer" class="nav-link">integer</a>
+			<a href="#Boolean" class="nav-link">Boolean</a>
+			<a href="#judul1" class="nav-link">judul1</a>
+			<a href="#List" class="nav-link">List</a>
 		</div>
+		<footer>
+			<p>Copyright: Ibara99</p>
+		</footer>
 	</nav>
 
 	<main id="main-doc">
@@ -68,9 +133,109 @@
 		User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
 
 		User Story #7: The .main-section elements should contain at least 5 li items total (not each).-->
+		<section class="main-section" id="String">
+			<header class="main-section2">
+				<h2>String</h2>
+			</header>
+			<div class="section-wrapper">
+				<p>Variable digunakan untuk menyimpan data. 
+				Nama variable harus diawali dengan huruf. 
+				Nama variable bersifat <i>case sensitive</i>.
+				Selain itu, nama variable diharapkan tidak menggunakan nama fungsi build-in seperti print atau import</p>
+				<p>Berikut contoh penggunaan variable</p>
+
+				<div class="code-wrapper">
+					<code>
+						#dapat digunakan untuk menyimpan string<br>
+						buah = "apel"<br>
+						<br>
+						#atau integer<br>
+						tinggi = 168<br>
+						<br>
+						#atau boolean<br>
+						dipakai = True<br>
+					</code>
+				</div>
+			</div>
+		</section>
+		<section class="main-section" id="integer">
+			<header class="main-section2">
+				<h2>integer</h2>
+			</header>
+			<div class="section-wrapper">
+				<p>Variable digunakan untuk menyimpan data. 
+				Nama variable harus diawali dengan huruf. 
+				Nama variable bersifat <i>case sensitive</i>.
+				Selain itu, nama variable diharapkan tidak menggunakan nama fungsi build-in seperti print atau import</p>
+				<p>Berikut contoh penggunaan variable</p>
+
+				<div class="code-wrapper">
+					<code>
+						#dapat digunakan untuk menyimpan string<br>
+						buah = "apel"<br>
+						<br>
+						#atau integer<br>
+						tinggi = 168<br>
+						<br>
+						#atau boolean<br>
+						dipakai = True<br>
+					</code>
+				</div>
+			</div>
+		</section>
+		<section class="main-section" id="Boolean">
+			<header class="main-section2">
+				<h2>Boolean</h2>
+			</header>
+			<div class="section-wrapper">
+				<p>Variable digunakan untuk menyimpan data. 
+				Nama variable harus diawali dengan huruf. 
+				Nama variable bersifat <i>case sensitive</i>.
+				Selain itu, nama variable diharapkan tidak menggunakan nama fungsi build-in seperti print atau import</p>
+				<p>Berikut contoh penggunaan variable</p>
+
+				<div class="code-wrapper">
+					<code>
+						#dapat digunakan untuk menyimpan string<br>
+						buah = "apel"<br>
+						<br>
+						#atau integer<br>
+						tinggi = 168<br>
+						<br>
+						#atau boolean<br>
+						dipakai = True<br>
+					</code>
+				</div>
+			</div>
+		</section>
 		<section class="main-section" id="judul1">
-			<header class="main-section">
-				<h2>Ini judul</h2>
+			<header class="main-section2">
+				<h2>judul1</h2>
+			</header>
+			<div class="section-wrapper">
+				<p>Variable digunakan untuk menyimpan data. 
+				Nama variable harus diawali dengan huruf. 
+				Nama variable bersifat <i>case sensitive</i>.
+				Selain itu, nama variable diharapkan tidak menggunakan nama fungsi build-in seperti print atau import</p>
+				<p>Berikut contoh penggunaan variable</p>
+
+				<div class="code-wrapper">
+					<code>
+						#dapat digunakan untuk menyimpan string<br>
+						buah = "apel"<br>
+						<br>
+						#atau integer<br>
+						tinggi = 168<br>
+						<br>
+						#atau boolean<br>
+						dipakai = True<br>
+					</code>
+				</div>
+			</div>
+		</section>
+		<section class="main-section" id="List">
+			<header class="main-section2">
+				<h2>List</h2>
 			</header>
 			<div class="section-wrapper">
 				<p>1</p>
@@ -78,7 +243,13 @@
 				<p>10</p>
 				<p>(total semua section)</p>
 
-				<code>let's see jadi apa</code>
+				<div class="code-wrapper">
+					<code>let's see jadi apa
+					s <br>
+					
+					ss
+					</code>
+				</div>
 
 				<ol>
 					<li>minimal</li>
@@ -89,44 +260,9 @@
 				</ol>
 			</div>
 		</section>
-		<section class="main-section" id="judul2">
-			<header class="main-section">
-				<h2>Ini judul 2</h2>
-			</header>
-			<div class="section-wrapper">
-				<p>1</p>
-				<p>sampe</p>
-				<p>10</p>
-				<p>(total semua section)</p>
-
-				<code>let's see jadi apa
-				s <br>
-
-				ss
-				</code>
-
-				<ol>
-					<li>minimal</li>
-					<li>ada</li>
-					<li>5 poin</li>
-					<li>secara</li>
-					<li>keseluruhan</li>
-				</ol>
-			</div>
-		</section>
-		<section class="main-section">
-			
-		</section>
-		<section class="main-section">
-			
-		</section>
-		<section class="main-section">
-			
-		</section>
+		
 
 	</main>
-
-	
-
 </body>
 </html>
+    
