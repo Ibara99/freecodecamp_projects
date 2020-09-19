@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>portofolio</title>
+	<style>
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	
+	#navbar {
+		background-color: #fff685;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 50px;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav-link {
+		//display: inline-block;
+		padding: 15px 15px;
+		height: 30px;
+		color: #0049b7;
+	}
+	
+	
+	section {
+		text-align: center;
+		color: white;
+		//border: 1pt red solid;
+	}
+	
+	
+	#welcome-section{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		//margin-top: 50px;
+		background-color: #f75990;
+		height: 100vh; 
+		//width: 100%;
+		padding: 20px;
+	}
+	
+	
+	#projects {
+		background-color: #00ddff;
+		//margin-top: -18px;
+		border: 1pt #00ddff solid;
+	}
+	#projects h2 {
+		margin-top: 75px;
+		//margin-bottom: 50px;
+	}
+	#projects p {
+		font-size: 10px;
+		margin-bottom: 50px;
+		text-transform: lowercase;
+	}
+	.project-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.project-tile {
+		width: 250px;
+		height: 300px;
+		margin: 10px 20px;
+	}
+	.project-tile img {
+		width: 100%;
+		height: auto;
+	}
+	.project-tile a {
+		display: inline-block;
+		background: #fff685;
+		color: #0049b7;
+		width: 100%;
+		padding: 5px 0;
+	}
+	
+	#profile {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		background-color: #0049B7;
+		height: 100vh;
+	}
+	.btn-container {
+		//display: inline-block;
+		background: #fff685;
+		padding: 5px;
+		margin-right: 10px;
+		margin-top: 10px;
+		text-align: left;
+		width: auto;
+	}
+	.btn-icon {
+		width: 20px;
+		height: 20px;
+		padding: 2px;
+		border-right: 1px solid #0049b7;
+	}
+	.profile-link {
+		padding: 2px;
+		color: #0049b7;
+	}
+	@media(max-width: 600px) {
+		#profile {
+			background: #0049B7;
+		}
+	}
+	</style>
+</head>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar">
+	<a class="nav-link" href="#welcome-section">home</a>
+	<a class="nav-link" href="#projects">projects</a>
+	<a class="nav-link" href="#profile">about me</a>
+</nav>
+<!--User Story #1: My portfolio should have a welcome section with an id of welcome-section.-->
+<section id="welcome-section">
+	<div class="flex-wrapper">
+		<h1>Ibara's Portofolio</h1>
+		<p>Get to know what Ibara has build</p>
+	</div>
+</section>
+
+<!--User Story #2: The welcome section should have an h1element that contains text.
+
+User Story #3: My portfolio should have a projects section with an id of projects.
+-->
+<section id="projects">
+	<h2>Projects I've been doing</h2>
+	<p>*click project's name to view demo</p>
+	<div class="project-wrapper">
+		<div class="project-tile">
+			<img src="https://seeklogo.com/images/A/adobe-portfolio-logo-A289F53AF8-seeklogo.com.png" alt="">
+			<a href="codepen.io">Project 1</a>
+		</div>
+		<div class="project-tile">
+			<img src="https://seeklogo.com/images/A/adobe-portfolio-logo-A289F53AF8-seeklogo.com.png" alt="">
+			<a href="codepen.io">Project 1</a>
+		</div>
+	</div>
+</section>
+<!--User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
+
+User Story #5: The projects section should contain at least one link to a project.
+
+User Story #6: My portfolio should have a navbar with an id of navbar.
+
+User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
+-->
+<section id="profile">
+	<div class="flex-wrapper">
+		<h2>Contact me on:</h2>
+		<div class="btn-wrapper">
+			<div class="btn-container">
+				<img class="btn-icon" src="./hska.png">
+				<a id="profile-link" class="profile-link" href="https://www.github.com/ibara99" target="_blank">Github</a>
+			</div>
+		</div>
+		<div class="btn-wrapper">
+			<div class="btn-container">
+				<img class="btn-icon" src="./hska.png">
+				<a class="profile-link" href="https://www.github.com/ibara99" target="_blank">Freecodecamp</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!--
+User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
+
+User Story #9: My portfolio should have at least one media query.
+
+User Story #10: The height of the welcome section should be equal to the height of the viewport.
+
+User Story #11: The navbar should always be at the top of the viewport.
+
+You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+-->
+
+</body>
+</html>
