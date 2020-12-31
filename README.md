@@ -29,9 +29,13 @@ Hasil projek saya pada tugas projek Freecodecamp. Repositori ini hanya sebagai p
 
 ![Screenshot Project](./resources/Microservice_1.png)
 
-2. Request Header Parser Microservice
+2. <a href="https://boilerplate-project-headerparser-1.ibaraasro.repl.co">Request Header Parser Microservice</a>
 
-3. URL Shortener Microservice
+![Screenshot Project](./resources/Microservice_2.png)
+
+3. <a href="https://boilerplate-project-urlshortener.ibaraasro.repl.co/">URL Shortener Microservice</a>
+
+![Screenshot Project](./resources/Microservice_3.png)
 
 4. Exercise Tracker
 
